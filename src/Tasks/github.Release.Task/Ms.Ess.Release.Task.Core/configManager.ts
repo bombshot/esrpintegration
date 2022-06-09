@@ -42,7 +42,7 @@ export class ConfigManager {
         this.config.ProductState = "new";
         this.config.Audience = "Workflow.A_S_AV_PackageManager";
         this.config.Environment = "Developer";
-        this.config.PackageLocation = "C:\\Users\\arugupta\\Source\\Repos\\Ess.Release.AdoTask2\\src\\Tests\\Vsts.Release.Task.Tests\\TestData\\pacman-app-1.1";
+        this.config.PackageLocation = "src/Tasks/github.Release.Task/pacman-app-1.1";
         this.config.Owners = "arugupta@microsoft.com,vijaisha@microsoft.com";
         this.config.Approvers = "shmallip@microsoft.com,vivaibha@microsoft.com";
         this.config.StatusPollingInterval = Constant.DelayBetweenEveryGetStatus;
