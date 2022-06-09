@@ -4,7 +4,8 @@
     "description": "esrp integration",
     "main": "index.js",
     "scripts": {
-      "submitRelease": "node src\\Tasks\\github.Release.Task\\index.js",
+      "submitReleaseLocal": "node src\\Tasks\\github.Release.Task\\index.js",
+      "submitRelease": "node src/Tasks/github.Release.Task/index.js",
       "tsToJs": "tsc"
     },
     "keywords": [],
