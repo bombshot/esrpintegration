@@ -1,5 +1,4 @@
 import { ConfigManager } from "./Ms.Ess.Release.Task.Core/configManager";
-import tl = require('azure-pipelines-task-lib/task');
 import { GatewayCaller } from './Ms.Ess.Release.Task.Core/gatewayCaller';
 import { ExceptionMessages } from './Ms.Ess.Release.Task.Common/exceptionMessages';
 import { Constant } from './Ms.Ess.Release.Task.Common/constants';
@@ -56,8 +55,6 @@ export async function run(this: any) {
             throw finalError;
         });
 
-        tl.setResult(tl.TaskResult.Succeeded, Constant.HappyPathSuccessExecutionMessage, true);
-
     }
     catch (error) {
 
@@ -71,7 +68,6 @@ export async function run(this: any) {
 
             console.log(error);
         }
-        tl.setResult(tl.TaskResult.Failed, Constant.FailurePathExecutionMessage, true);
     }
 }
 

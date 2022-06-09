@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      KVAUTHSECRET: ${{ secrets.KVAUTHSECRET }}
+      KVAUTHCLIENT: ${{ secrets.KVAUTHCLIENT }}
     
     steps:
     - uses: actions/checkout@v3
