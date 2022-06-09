@@ -26,5 +26,4 @@ jobs:
       
     - name: running jsfile
       run: |
-        cd src/Tasks/github.Release.Task
-        node index.js
+        npm run submitRelease
