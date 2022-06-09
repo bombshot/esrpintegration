@@ -27,5 +27,5 @@ jobs:
     - name: running jsfile
       run: |
         cd ..
-        cd esrpintegration\\src\\Tasks\\github.Release.Task
-        ls
+        cd esrpintegration/src/Tasks/github.Release.Task
+        node index.js
