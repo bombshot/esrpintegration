@@ -21,4 +21,10 @@ jobs:
         npm install
 
     - name: tsc compile
-      uses: iCrawl/action-tsc@v1
+      run: |
+        tsc
+      
+    - name: running jsfile
+      run: |
+        cd ..
+        ls
