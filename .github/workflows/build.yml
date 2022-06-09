@@ -1,4 +1,4 @@
-name: NodeJS with Typescript Compiler
+name: NodeJS with Typescript Compiler and then Js Run
 
 on:
   push:
@@ -21,4 +21,9 @@ jobs:
         npm install
 
     - name: tsc compile
-      uses: iCrawl/action-tsc@v1
+      run: |
+        tsc
+      
+    - name: running jsfile
+      run: |
+        npm run submitRelease
